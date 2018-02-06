@@ -1,0 +1,10 @@
+/.vscode
+/.vs
+/.tmp
+/.sourcemaps
+/.exit
+/www
+/node_modules
+/dist
+app/logs.txt
+npm-debug.log
