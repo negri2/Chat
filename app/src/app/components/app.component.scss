@@ -1,0 +1,33 @@
+.content {
+    height: 100%;
+    width: 100%;
+    display: block;
+    
+    input {
+        height: 30px;
+        width: 424px;
+        margin: 10px 0 0 0;
+    }
+
+    button {
+        margin: 10px 0 0 0;
+        background: #3f51b5;
+    }
+
+    .message-container {
+        padding: 10px;
+        height: 500px;
+        width: 500px;
+        background: lightgray;
+
+        .message-item {
+            border-radius: 10px;
+            height: 30px;
+            background: #5370c1;
+            width: auto;
+            align-self: center;
+            padding: 5px 5px 0 5px;
+            margin: 5px 0;
+        }
+    }
+}

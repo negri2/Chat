@@ -1,0 +1,10 @@
+<div class="content">
+  <div class="message-container">
+    <div class="message-item" *ngFor="let message of messages">
+      {{message.text}}
+    </div>
+  </div>
+
+  <input matInput placeholder="Digite aqui..." [(ngModel)]="message" (keyup.enter)="sendMessage()">
+  <button mat-raised-button (click)="sendMessage()">Enviar</button>
+</div>

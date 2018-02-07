@@ -13238,9 +13238,9 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Repositorio\\Chat\\api\\Chat\\Chat.csproj",
-      "projectName": "Chat",
-      "projectPath": "C:\\Repositorio\\Chat\\api\\Chat\\Chat.csproj",
+      "projectUniqueName": "C:\\Repositorio\\Chat\\api\\Chat\\Chat.API.csproj",
+      "projectName": "Chat.API",
+      "projectPath": "C:\\Repositorio\\Chat\\api\\Chat\\Chat.API.csproj",
       "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
       "outputPath": "C:\\Repositorio\\Chat\\api\\Chat\\obj\\",
       "projectStyle": "PackageReference",
