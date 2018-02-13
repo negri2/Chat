@@ -14,8 +14,8 @@ io.on('connection', (socket) => {
   });
 });
 
-http.listen(5000, () => {
-  console.log('started on port 5000');
+http.listen(7000, () => {
+  console.log('started on port 7000');
 });
 
 //node app.js

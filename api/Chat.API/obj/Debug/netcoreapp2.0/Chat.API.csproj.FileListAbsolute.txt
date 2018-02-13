@@ -9,3 +9,5 @@ C:\Repositorio\Chat\api\Chat.API\obj\Debug\netcoreapp2.0\Chat.API.AssemblyInfoIn
 C:\Repositorio\Chat\api\Chat.API\obj\Debug\netcoreapp2.0\Chat.API.AssemblyInfo.cs
 C:\Repositorio\Chat\api\Chat.API\obj\Debug\netcoreapp2.0\Chat.API.dll
 C:\Repositorio\Chat\api\Chat.API\obj\Debug\netcoreapp2.0\Chat.API.pdb
+C:\Repositorio\Chat\api\Chat.API\bin\Debug\netcoreapp2.0\Chat.Data.dll
+C:\Repositorio\Chat\api\Chat.API\bin\Debug\netcoreapp2.0\Chat.Data.pdb

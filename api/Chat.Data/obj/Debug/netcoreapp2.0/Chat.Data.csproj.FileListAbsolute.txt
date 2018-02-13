@@ -1,0 +1,9 @@
+C:\Repositorio\Chat\api\Chat.Data\bin\Debug\netcoreapp2.0\Chat.Data.deps.json
+C:\Repositorio\Chat\api\Chat.Data\bin\Debug\netcoreapp2.0\Chat.Data.dll
+C:\Repositorio\Chat\api\Chat.Data\obj\Debug\netcoreapp2.0\Chat.Data.csprojResolveAssemblyReference.cache
+C:\Repositorio\Chat\api\Chat.Data\obj\Debug\netcoreapp2.0\Chat.Data.csproj.CoreCompileInputs.cache
+C:\Repositorio\Chat\api\Chat.Data\obj\Debug\netcoreapp2.0\Chat.Data.AssemblyInfoInputs.cache
+C:\Repositorio\Chat\api\Chat.Data\obj\Debug\netcoreapp2.0\Chat.Data.AssemblyInfo.cs
+C:\Repositorio\Chat\api\Chat.Data\bin\Debug\netcoreapp2.0\Chat.Data.pdb
+C:\Repositorio\Chat\api\Chat.Data\obj\Debug\netcoreapp2.0\Chat.Data.dll
+C:\Repositorio\Chat\api\Chat.Data\obj\Debug\netcoreapp2.0\Chat.Data.pdb
