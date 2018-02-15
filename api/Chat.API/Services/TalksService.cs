@@ -1,5 +1,7 @@
-﻿using Chat.Data;
+﻿using Chat.API.Models;
+using Chat.Data;
 using Chat.Data.Entities;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -23,9 +25,11 @@ namespace Chat.API.Services
             return dbContext.Talks.Find(i => true).ToList();
         }
 
-        public void PostTalk(Talk talk)
+        public string PostTalk(Talk talk)
         {
+            talk.Id = ObjectId.GenerateNewId().ToString();
             dbContext.Talks.InsertOne(talk);
+            return talk.Id;
         }
     }
 }

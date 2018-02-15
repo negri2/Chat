@@ -11,7 +11,7 @@ export class ChatService {
   }
   
   getMessages() {
-    let observable = new Observable(observer => {
+    let observable = new Observable<any>(observer => {
       this.socket = io(this.url);
       this.socket.on('message', (data) => {
         observer.next(data);    

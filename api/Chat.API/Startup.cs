@@ -55,7 +55,10 @@ namespace Chat
             }
 
             app.UseStaticFiles();
-            
+
+            //ativação do CORS
+            app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials());
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

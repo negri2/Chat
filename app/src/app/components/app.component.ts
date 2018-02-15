@@ -17,12 +17,30 @@ export class AppComponent implements OnInit, OnDestroy {
   message: string;
 
   constructor(private chatService: ChatService, public apiService: ApiService) {
+
+    this.loadTalks();
   }
 
   OnInit() {
-    // fazer chamar API para salvar e carregar as mensagens
 
-    this.talks = this.apiService.getMessages();
+  }
+
+  loadTalks() {
+    this.apiService.getMessages()
+      .then(response => {
+        if (response)
+          this.talks = response;
+      });
+  }
+
+  saveTalk(talk: Talk) {
+    this.apiService.postMessage(talk)
+      .then(response => {
+        if (response) {
+          talk.id = response;
+          this.talks.push(talk);
+        }
+      });
   }
 
   sendMessage() {
@@ -30,26 +48,21 @@ export class AppComponent implements OnInit, OnDestroy {
     if (this.message.length == 0) return;
 
     this.chatService.sendMessage(this.message);
-    this.apiService.postMessage({
-      id: "",
-      date: new Date(),
-      user: "Henrique",
-      message: this.message
-    });
-    //se a mensagem for enviada, chamar api para salvar
-    //salvar tbm data e usuario
     this.message = '';
   }
 
   ngOnInit() {
-    this.connection = this.chatService.getMessages().subscribe(message => {
-      this.talks.push({
-        id: "",
-        date: new Date(),
-        user: "Henrique",
-        message: message
-      });
-    })
+    this.connection = this.chatService.getMessages()
+      .subscribe(message => {
+        if (message) {
+          this.saveTalk({
+            id: null,
+            date: new Date(),
+            user: "Henrique",
+            message: this.message
+          });
+        }
+      })
   }
 
   ngOnDestroy() {

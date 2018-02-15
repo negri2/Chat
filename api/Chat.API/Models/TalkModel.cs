@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace Chat.Data.Entities
+namespace Chat.API.Models
 {
-    public class Talk
+    public class TalkModel
     {
-        public string Id { get; set; }
-
         public string User { get; set; }
 
         public DateTime Date { get; set; }

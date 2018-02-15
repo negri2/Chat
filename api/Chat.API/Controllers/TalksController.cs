@@ -29,8 +29,8 @@ namespace Chat.API.Controllers
         [HttpPost]
         public IActionResult PostTalk([FromBody]Talk talk)
         {
-            this._service.PostTalk(talk);
-            return Ok();
+            var result = this._service.PostTalk(talk);
+            return Ok(result);
         }
     }
 }
