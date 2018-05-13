@@ -4,4 +4,5 @@ npm install
 
 ng serve 
 
-ng app.js 
+..src/ node app.js 
+
