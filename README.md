@@ -6,3 +6,6 @@ ng serve
 
 ..src/ node app.js 
 
+
+//executar mongo
+cmd - mongod.exe
